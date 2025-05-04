@@ -44,6 +44,16 @@
             key-positions = <0 1>;
             bindings = <&kp ESC>;
         };
+
+        TestBL {
+            bindings = <&bootloader>;
+            key-positions = <15 4>;
+        };
+
+        BLRight {
+            bindings = <&bootloader>;
+            key-positions = <5 16>;
+        };
     };
 
     keymap {
@@ -68,10 +78,10 @@
                                  └─────────┴─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘ */
 
             bindings = <
-             &kp Q  &kp W  &kp F      &kp P        &kp G                          &kp J    &kp L        &kp U      &kp Y    &kp SEMI
-&bootloader  &kp A  &kp R  &kp S      &hm LSHFT T  &kp D                          &kp H    &hm RSHFT N  &kp E      &kp I    &kp O     &bootloader
-&kp DEL      &kp Z  &kp X  &kp C      &kp V        &kp B      &trans    &trans    &kp K    &kp M        &kp COMMA  &kp DOT  &kp FSLH  &kp BSLH
-                           &kp LCTRL  &mo LOWER    &kp SPACE  &kp LALT  &kp LGUI  &kp RET  &mo RAISE    &kp BSPC
+              &kp Q  &kp W  &kp F      &kp P        &kp B                          &kp J    &kp L        &kp U      &kp Y    &kp SEMI
+&kp NUMBER_2  &kp A  &kp R  &kp S      &hm LSHFT T  &kp G                          &kp M    &hm RSHFT N  &kp E      &kp I    &kp O     &kp N3
+&kp DEL       &kp X  &kp C  &kp D      &kp V        &kp Z      &trans    &trans    &kp K    &kp H        &kp COMMA  &kp DOT  &kp FSLH  &kp BSLH
+                            &kp LCTRL  &mo LOWER    &kp SPACE  &kp LALT  &kp LGUI  &kp RET  &mo RAISE    &kp BSPC
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
