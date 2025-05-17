@@ -29,7 +29,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <230>;
             quick_tap_ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
@@ -78,10 +78,10 @@
                                  └─────────┴─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘ */
 
             bindings = <
-              &kp Q  &kp W  &kp F      &kp P        &kp B                          &kp J    &kp L        &kp U      &kp Y    &kp SEMI
-&kp NUMBER_2  &kp A  &kp R  &kp S      &hm LSHFT T  &kp G                          &kp M    &hm RSHFT N  &kp E      &kp I    &kp O     &kp N3
-&kp DEL       &kp X  &kp C  &kp D      &kp V        &kp Z      &trans    &trans    &kp K    &kp H        &kp COMMA  &kp DOT  &kp FSLH  &kp BSLH
-                            &kp LCTRL  &mo LOWER    &kp SPACE  &kp LALT  &kp LGUI  &kp RET  &mo RAISE    &kp BSPC
+              &kp Q           &kp W           &kp F        &kp P        &kp B                          &kp J    &kp L          &kp U        &kp Y            &kp SEMI
+&kp NUMBER_2  &hm LEFT_WIN A  &hm LEFT_ALT R  &hm LCTRL S  &hm LSHFT T  &kp G                          &kp M    &hm RSHFT N    &hm RCTRL E  &hm RIGHT_ALT I  &hm RIGHT_WIN O  &kp N3
+&kp DEL       &kp X           &kp C           &kp D        &kp V        &kp Z      &trans    &trans    &kp K    &kp H          &kp COMMA    &kp DOT          &kp FSLH         &kp BSLH
+                                              &kp TAB      &kp SPACE    &kp SPACE  &kp LALT  &kp LGUI  &kp RET  &kp BACKSPACE  &kp ENTER
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
