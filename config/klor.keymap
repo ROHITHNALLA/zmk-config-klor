@@ -43,14 +43,20 @@
             bindings = <&kp ESC>;
         };
 
-        TestBL {
+        bootloader_left {
             bindings = <&bootloader>;
-            key-positions = <4 15>;
+            key-positions = <0 10 20>;
+            timeout-ms = <100>;
+            require-prior-idle-ms = <500>;
+            slow-release;
         };
 
-        BLRight {
+        bootloader_right {
             bindings = <&bootloader>;
-            key-positions = <5 16>;
+            key-positions = <9 19 29>;
+            timeout-ms = <100>;
+            require-prior-idle-ms = <500>;
+            slow-release;
         };
     };
 
