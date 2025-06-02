@@ -45,22 +45,12 @@
 
         TestBL {
             bindings = <&bootloader>;
-            key-positions = <15 4>;
+            key-positions = <4 15>;
         };
 
         BLRight {
             bindings = <&bootloader>;
             key-positions = <5 16>;
-        };
-
-        Ctlr_Bsc {
-            bindings = <&kp LC(BACKSPACE)>;
-            key-positions = <37 42>;
-        };
-
-        Ctrl_Enter {
-            bindings = <&kp LC(ENTER)>;
-            key-positions = <36 43>;
         };
     };
 
