@@ -46,7 +46,7 @@
 
         bootloader_left {
             bindings = <&bootloader>;
-            key-positions = <0 10 20>;
+            key-positions = <0 10 27>;
             timeout-ms = <100>;
             require-prior-idle-ms = <500>;
             slow-release;
@@ -54,7 +54,7 @@
 
         bootloader_right {
             bindings = <&bootloader>;
-            key-positions = <9 19 29>;
+            key-positions = <9 21 30>;
             timeout-ms = <100>;
             require-prior-idle-ms = <500>;
             slow-release;
