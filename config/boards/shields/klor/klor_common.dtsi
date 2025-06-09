@@ -16,8 +16,10 @@
 	kscan0: kscan {
 		compatible = "zmk,kscan-gpio-matrix";
 		label = "KSCAN";
+		diode-direction = "col2row";
+		wakeup-source;
 
-		diode-direction = "col2row";		
+		
 	};
 
 	left_encoder: encoder_left {
